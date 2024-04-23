@@ -1,0 +1,513 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  background-color: #283040;
+  background-image: linear-gradient(to bottom, #283040 10%, #e3bec5 50%, #283040 100%);
+  font-family: 'Handlee', sans-serif;
+  overflow-x: hidden; /* Evita a barra de rolagem horizontal */
+}
+
+header {
+  height: 100%;
+}
+
+          /* INICIO */
+
+.fundo-geral {
+  margin-top: 4em;
+  margin-left: 3em;
+  margin-right: 3em;
+  background-image: linear-gradient(to bottom,#e3bec5 10%, #283040 50%, #e3bec5 100%);
+  position: relative;
+}
+
+.menu {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1em 0 1em;
+  border-bottom: 3px  solid #F4F4F9;
+  background-color:#283040;
+  z-index: 1000;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 1.8em;
+  transition: .8s;
+  color: #fff;
+  font-family: 'Playpen Sans', Arial, Helvetica, sans-serif;
+}
+
+.oculto {
+  display: none;
+}
+
+
+a:hover {
+  transform: scale(1. 1);
+  color: #e3bec5 ;
+  text-decoration: underline;
+  text-decoration-color: #e3bec5;
+}
+
+.botao-whatsapp {
+  display: block;
+  position: fixed;
+  width: 60px;
+  height: auto;
+  top: 85%;
+  left: 91%;
+}
+
+.botao-whatsapp:hover {
+  transform: scale(1.4, 1.4);
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+      opacity: .5;
+  }
+}
+
+.inicio {
+  background-image: url(./img/monise-background1.png);
+  /* background-color: rgba(40, 48, 64, 0.400); */
+  scroll-margin-top: 80px;
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 0;
+  height: 100vh;
+  margin: 0 100px;
+  border-bottom: 3px solid #F4F4F9;
+  /* border: 3px  solid #F4F4F9; */
+  border-radius: 10px;
+}
+
+.inicio h3 {
+  margin-top: 1em;
+}
+
+.central {
+  display: block;
+  margin-top: 100px;
+}
+
+.central > h2, h3, h4 {
+  padding: 5px;
+  margin-bottom: 0;
+  color: #283040;
+  background-color: rgba(227, 190, 197, 0.400);
+  border-radius: 15px;
+}
+
+.central > h3, h4 {
+  font-weight: bolder;
+}
+
+.central > h4 {
+  font-size: larger;
+}
+
+.foto-inicial {
+  width: 70px;
+  height: 70px;
+  border-radius: 300px;
+  border: 5px solid #fff;
+  margin: 1em 1em;
+  
+}
+
+.foto-inicial:hover {
+  border: 5px solid #283040;
+  transform: scale(1.02);
+}
+
+.nome {
+  font-weight: 600;
+  font-size: 2.3em;
+  color: #283040;
+  margin: 0;
+  text-decoration: underline;
+  font-family: 'Handlee', sans-serif;
+}
+
+.sobrenome {
+  margin: 0;
+  color: #283040;
+  font-size: 1.5em;
+  font-weight: 400;
+  font-family: 'Handlee', sans-serif;
+}
+
+
+          /* SOBRE */
+
+
+.sobre {
+  scroll-margin-top: 80px;
+  text-align: center;
+  margin: 0 5em 0 5em;
+  padding-top: 0.5em;
+  padding-bottom: 6em;
+  height: 100%;
+  background-image: url(./img/foto-fundo-1.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: .5em;
+  border-top-left-radius: 4em;
+  border-bottom-right-radius: 4em;
+}
+
+.titulo-section {
+  font-size: 2em;   /*padrão */
+  text-transform: uppercase;
+  text-align: center;
+  color: #283040;
+  margin-top: 1em;
+  font-family: 'Handlee', sans-serif;
+  font-weight: 600;
+}
+
+.sub-titulo-section {
+  font-size: 1.7em;   /*padrão */
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #283040;
+  text-decoration: underline;
+  text-decoration-color: #283040;
+  font-family: 'Handlee', sans-serif;
+  font-weight: 600;
+}
+
+.fundo-retangulo-sobre {
+  text-align: center;
+  height: auto;
+  background-color:rgba(40, 48, 64, 0.500);
+  padding: 1em;
+  margin: 2em 5em 0 5em;
+  border-radius: 1.5em;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight:500 ;
+}
+
+
+          /* DICAS */
+
+.dicas {
+  scroll-margin-top: 80px;
+  height: auto;
+  margin: 0 5em 0 5em;
+  padding-top: 0.5em;
+  padding-bottom: 6em;
+  background-image: url(./img/foto-fundo-2.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: .5em;
+  border-top-left-radius: 4em;
+  border-bottom-right-radius: 4em;
+}
+
+.titulo-section-dicas {
+  font-size: 2em;   /*padrão */
+  text-transform: uppercase;
+  text-align: center;
+  color: #283040;
+  margin-top: 1em;
+  font-family: 'Handlee', sans-serif;
+  font-weight: 600;
+}
+
+.sub-titulo-section-dicas {
+  font-size: 1.7em;   /*padrão */
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #283040;
+  text-decoration: underline;
+  text-decoration-color: #283040;
+  font-family: 'Handlee', sans-serif;
+  font-weight: 600;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 30px ;
+  padding: 20px;
+  margin: 2em 5em 0 5em;
+  grid-auto-flow: row;
+}
+
+.grid-container > .cards {
+  padding: 1em;
+  /* height: auto; */
+  background-image: linear-gradient(to bottom, rgba(194, 230, 219, 0.500) 10%, rgba(227, 190, 197, 0.500) 80%);
+  text-align: center;
+  border-radius: .75em;
+  transform: rotate(-3deg);
+  font-family: 'Handlee', sans-serif;
+}
+
+.grid-container > .cards1 {
+  padding: 1em;
+  /* height: auto; */
+  background-image: linear-gradient(to bottom, rgba(194, 230, 219, 0.500) 10%, rgba(227, 190, 197, 0.500) 80%);
+  text-align: center;
+  border-radius: .75em;
+  transform: rotate(3deg);
+  font-family: 'Handlee', sans-serif;
+}
+
+.grid-container > .cards::after{
+  content: "";
+  background-color: #c385f5;
+  border-radius: 999px;
+  /* border: 7px solid #e3bec5; */
+  display: block;
+  height: 1.25rem;
+  width: 1.25rem;
+  position: absolute;
+  top: 0.25rem;
+  right: 1rem;
+}
+
+.grid-container > .cards1::after{
+  content: "";
+  background-color: #c385f5;
+  /* border: 7px solid #e3bec5; */
+  border-radius: 999px;
+  display: block;
+  height: 1.25rem;
+  width: 1.25rem;
+  position: absolute;
+  top: 0.25rem;
+  right: 1rem;
+}
+
+.cards:hover, .cards1:hover { 
+  cursor: pointer;
+}
+
+
+
+.grid-container h2{
+  color: #fff;
+  font-weight: 500;
+  font-size: 1em;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  font-weight: bolder;
+}
+
+.grid-container p {
+  color: #283040;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.cards:hover, .cards1:hover {
+  transform: rotate(0);
+
+
+}
+
+          /* CONTATOS */
+
+.contato {
+  display: grid;
+  scroll-margin-top: 80px;
+  height: 100%;
+  margin: 0 5em 0 5em;
+  background-color: rgba(217, 217, 217, 0.1);
+  padding-top: 0.5em;
+  padding-bottom: 6em;
+  background-image: url(./img/foto-fundo-1.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: .5em;
+  border-top-left-radius: 4em;
+  border-bottom-right-radius: 4em;
+}
+
+.fundo-retangulo-contato {
+  margin-top: 3em;
+  margin-left: 3em;
+  height: 100%;
+  padding: 1em 0;
+  background-image: linear-gradient(to bottom, rgba(194, 230, 219, 0.500) 10%, rgba(227, 190, 197, 0.500) 80%);
+  text-align: center;
+  border-radius: .75em;
+  /* border-top-left-radius: 3em;
+  border-bottom-right-radius: 3em; */
+}
+
+.fundo-retangulo-contato img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 5px solid #fff;
+}
+
+.foto-final:hover {
+  border: 5px solid #283040;
+  transform: scale(1.02);
+}
+
+.nome-contato {
+  font-weight: 600;
+  font-size: 1.075em;
+  color: #283040;
+  margin-top: 3em;
+  text-decoration: underline;
+  font-family: 'Handlee', sans-serif;
+}
+
+.sobrenome-contato {
+  margin: 0;
+  color: #283040;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: 'Handlee', sans-serif;
+}
+
+
+.icones {
+  display: flex;
+  margin-top: 3em;
+  height: 100%;
+  background-image: linear-gradient(to bottom, hwb(162 76% 10% / 0.5) 10%, rgba(227, 190, 197, 0.500) 80%);
+  text-align: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-radius: .75em;
+  padding: 0 0 6em 0;
+}
+
+.icones div {
+  margin-bottom:0;
+  background-color: rgba(194, 230, 219, 0.500);
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: .75em;
+  padding: 1em;
+}
+
+.icones a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.250em;
+  font-weight: 600;
+}
+
+.icones > .titulo-section {
+  font-size: 2em;   /*padrão */
+  text-transform: uppercase;
+  text-align: center;
+  color: #283040;
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-family: 'Handlee', sans-serif;
+}
+
+.endereco {
+  margin-top: 3em;
+  margin-right: 3em;
+  height: 100%;
+  padding: 1em 1em;
+  background-image: linear-gradient(to bottom, rgba(194, 230, 219, 0.500) 10%, rgba(227, 190, 197, 0.500) 80%);
+  text-align: center;
+  border-radius: .75em;
+  /* position: relative; */
+  overflow: hidden;
+  transition: width 0.3s, height 0.3s; /* adiciona uma transição suave */
+}
+
+.endereco > .titulo-section {
+  font-size: 2em;   /*padrão */
+  text-transform: uppercase;
+  text-align: center;
+  color: #283040;
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-family: 'Handlee', sans-serif;
+}
+
+.endereco iframe {
+  border-radius: .75em;
+}
+
+.endereco p a {
+  color: inherit;
+  text-decoration: underline;
+  font-family: 'Handlee', sans-serif;
+}
+
+.endereco p {
+    margin-top: 1em;
+    text-align: center;
+    color: #283040;
+    font-family: 'Handlee', sans-serif;
+    font-weight: bold;
+}
+
+.imagem-logo {
+    display: block;
+    text-align: center;
+}
+
+.logo {
+    width: 200px; /* Tamanho do logo */
+    height: auto;
+    margin: 3em 0;
+}
+
+.rodape {
+  border-top: 3px  solid #F4F4F9;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+  color: #283040;
+  font-family: 'Handlee', sans-serif;
+}
+
+.crm {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.rodape a {
+  text-decoration: underline;
+  color: inherit;
+  font-family: 'Handlee', sans-serif;
+}
+
+.rodape p:nth-child(5) {
+  font-size: .9em;
+  font-family: 'Handlee', sans-serif;
+}

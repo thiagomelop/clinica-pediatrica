@@ -1,0 +1,285 @@
+/* Adicionando media queries para ajustar a responsividade */
+
+/* Pequenos dispositivos (telefones, 600px e abaixo) */
+@media only screen and (max-width: 400px) {
+  .body {
+      padding: 0 auto; /* Adiciona um espaçamento nas laterais do body */
+      font-size: 7px; /* Ajusta o tamanho da fonte */
+  }
+
+  .fundo-geral {
+    margin: 0; /* Reduz as margens laterais em telas menores */
+  }
+
+  .menu {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .menu a {
+    font-size: 12px;
+  }
+
+  .titulo-section {
+    margin-top: .1em ;
+    color:#e3bec5 ;
+    font-size: 1.3em; 
+  }
+
+  .sub-titulo-section {
+    margin-bottom: .1em;
+    color:#e3bec5 ;
+    text-decoration-color: #e3bec5 ;
+    font-size: 1em;
+  }
+
+  .titulo-section-dicas {
+    margin-top: .1em ;
+    font-size: 1.3em;  
+  }
+
+  .sub-titulo-section-dicas {
+    margin-bottom: .1em;
+    font-size: 1em;
+  }
+
+  .inicio {
+    scroll-margin-top: 200px;
+  }
+
+  .sobre, .dicas, .contato {
+    scroll-margin-top: 100px;
+  }
+  .inicio, .sobre, .dicas, .contato {
+    margin: 0 .5em;
+  }
+
+  .foto-inicial {
+    width: 200px;
+    height: 200px;
+  }
+
+  .grid-container {
+    display: block;
+    /* display: flex; */
+    margin: 0;
+    padding: 2px;
+  }
+
+  .grid-container > .cards, 
+  .grid-container > .cards1 {
+    padding: 15px;
+    transform: rotate(0);
+    margin: 15px 0;
+  }
+
+  .grid-container > .cards::after, 
+  .grid-container > .cards1::after {
+    content: none;
+  }
+
+  .fundo-retangulo-sobre {
+    margin: .5em 1em 0 .5em;
+    padding: .2em;
+  }
+
+  .contato {
+    display: block;
+  }
+
+  .fundo-retangulo-contato {
+    margin: .5em auto;
+    width: 80%;
+  }
+
+  .fundo-retangulo-contato > .nome-contato {
+    font-size: 1.1em;
+    margin-top: 1em;
+  }
+
+  .fundo-retangulo-contato > .sobrenome-contato { 
+    font-size: .9em;
+  }
+
+  .icones { 
+    display: block;
+    margin: .5em auto;
+    width: 80%;
+  }
+
+  .icones > div {
+    margin: 0 30px 6px 30px ;
+  }
+
+  .icones > .titulo-section {
+    padding-top: 15px;
+  }
+
+  .endereco {
+    margin: 0 1em;
+    padding: 0.5em;
+  }
+
+  .endereco > .titulo-section {
+    padding-top: 15px;
+  }
+
+  .logo {
+    width: 150px;
+    margin: 1.5em 0;
+  }
+}
+
+
+
+
+
+
+/* Médios dispositivos (tablets, 768px e abaixo) */
+@media only screen and (max-width: 768px) {
+  .body {
+    padding: 0 auto; /* Adiciona um espaçamento nas laterais do body */
+    font-size: 7px; /* Ajusta o tamanho da fonte */
+}
+
+.fundo-geral {
+  margin: 0; /* Reduz as margens laterais em telas menores */
+}
+
+.menu {
+  height: auto;
+  flex-direction: column;
+}
+
+/* .menu a {
+  font-size: .5em;
+} */
+
+.titulo-section {
+  margin-top: .1em ;
+  color:#e3bec5 ;
+  font-size: 1.3em; 
+}
+
+.sub-titulo-section {
+  margin-bottom: .1em;
+  color:#e3bec5 ;
+  text-decoration-color: #e3bec5 ;
+  font-size: 1em;
+}
+
+.titulo-section-dicas {
+  margin-top: .1em ;
+  font-size: 1.3em;  
+}
+
+.sub-titulo-section-dicas {
+  margin-bottom: .1em;
+  font-size: 1em;
+}
+
+.inicio {
+  margin-top: 160px;
+}
+
+.inicio, .sobre, .dicas, .contato {
+  scroll-margin-top: 150px;
+}
+.sobre, .dicas, .contato {
+  margin: 0 1em;
+}
+
+.foto-inicial {
+  width: 200px;
+  height: 200px;
+}
+
+.grid-container {
+  display: block;
+  /* display: flex; */
+  margin: 0;
+  padding: 2px;
+}
+
+.grid-container > .cards, 
+.grid-container > .cards1 {
+  padding: 15px;
+  transform: rotate(0);
+  margin: 15px 15px;
+}
+
+.grid-container > .cards::after, 
+.grid-container > .cards1::after {
+  content: none;
+}
+
+.fundo-retangulo-sobre {
+  margin: 1em 1.5em 0 1em;
+  padding: .8em;
+}
+
+.fundo-retangulo-sobre > p {
+  font-size: .9em;
+}
+
+.contato {
+  display: block;
+}
+
+.fundo-retangulo-contato {
+  margin: .5em auto;
+  width: 80%;
+}
+
+.fundo-retangulo-contato > .nome-contato {
+  font-size: 1.1em;
+  margin-top: 1em;
+}
+
+.fundo-retangulo-contato > .sobrenome-contato { 
+  font-size: .9em;
+}
+
+.icones { 
+  display: block;
+  margin: .5em auto;
+  width: 80%;
+}
+
+.icones > div {
+  margin: 0 60px 12px 60px ;
+}
+
+.icones > .titulo-section {
+  padding-top: 15px;
+}
+
+.endereco {
+  margin: 0 1em;
+  padding: 0.5em;
+}
+
+.endereco > .titulo-section {
+  padding-top: 15px;
+}
+
+.logo {
+  width: 150px;
+  margin: 1.5em 0;
+}
+}
+
+/* Grandes dispositivos (desktops, 992px e abaixo) */
+@media only screen and (max-width: 992px) {
+  .menu a {
+    font-size: 1em;
+  }
+
+  .nome, .nome-contato {
+    font-size: 2em;
+  }
+
+  .sobrenome, .sobrenome-contato {
+    font-size: 1.5em;
+  }
+}
