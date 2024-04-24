@@ -19,5 +19,3 @@ function toggleBlink() {
 }
 
 setInterval(toggleBlink, 800); // Altere o intervalo conforme desejado
-
-
