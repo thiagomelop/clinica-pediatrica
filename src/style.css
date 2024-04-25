@@ -1,7 +1,7 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css";
 @font-face {
-  font-family: 'cherolina';
-  src: url(./fontes/Cherolina.ttf);
+  font-family: 'externa';
+  src: url(./fontes/Madina.ttf);
 }
 html {
   scroll-behavior: smooth;
@@ -16,7 +16,7 @@ html {
   margin: 0 auto;
   background-color: #283040;
   background-image: linear-gradient(to bottom,#e3bec5 1%, #283040 30%, #e3bec5 120%);  font-family: 'Handlee', sans-serif;
-  overflow-x: hidden; /* Evita a barra de rolagem horizontal
+  overflow-x: hidden; 
 } */
 
 header {
@@ -73,8 +73,8 @@ a:hover {
   position: fixed;
   width: 60px;
   height: auto;
-  top: 85%;
-  left: 91%;
+  top: 80%;
+  left: 92%;
 }
 
 .botao-whatsapp:hover {
@@ -94,9 +94,8 @@ a:hover {
 .inicio {
   background-image: url(./img/corona-test.jpg);
   scroll-margin-top: 80px;
-  background-repeat: no-repeat; 
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,9 +110,12 @@ a:hover {
 }
 
 .central {
-  display: block;
-  margin-top: 200px;
-  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 200px; */
+  width: 40%;
 }
 
 .central > h2, h3, h4 {
@@ -128,7 +130,7 @@ a:hover {
   display: inline-block;
   max-width: 300px;
   width: 100%;
-  font-family: 'Dancing Script';
+  font-family: 'externa';
   background-color: rgba(255, 255, 255, 0.300);
 }
 
@@ -160,8 +162,8 @@ a:hover {
 } */
 
 .nome {
-  font-weight: 600;
-  font-size: 2.5em;
+  /* font-weight: 600; */
+  font-size: 4em;
   color: #283040;
   /* text-decoration: underline; */
   font-family: 'Handlee', sans-serif;
@@ -169,8 +171,8 @@ a:hover {
 
 .sobrenome {
   color: #283040;
-  font-size: 2.5em;
-  font-family: 'Handlee', sans-serif;
+  font-size: 3em;
+  font-family: 'externa', sans-serif;
 }
 
 .entre-em-contato {
