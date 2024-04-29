@@ -1,16 +1,14 @@
-document.addEventListener("DOMContentLoaded", function() {
-    $(window).scroll(function() {
-        var secaoInicioPosicao = $("header #inicio").offset().top;
-        var janelaPosicao = $(this).scrollTop();
+window.addEventListener('scroll', function() {
+    var inicioSection = document.getElementById('imagem-logo');
+    var inicioLink = document.getElementById('inicio-link');
 
-        if (janelaPosicao >= secaoInicioPosicao) {
-            $(".menu a.oculto").fadeIn(500); /* Exibe o link "Início" quando passa da seção inicial */
-        } else {
-            $(".menu a.oculto").fadeOut(500); /* Oculta o link "Início" ao voltar para cima da seção inicial */
-        }
-    });
+    // Verifica se a posição de rolagem é maior que a posição da seção "Início"
+    if (window.scrollY > inicioSection.offsetTop) {
+        inicioLink.style.display = 'block'; // Torna o link "Início" visível
+    } else {
+        inicioLink.style.display = 'none'; // Oculta o link "Início"
+    }
 });
-
 
 
 

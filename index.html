@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
   <head>
     <meta charset="UTF-8">
@@ -7,16 +7,13 @@
     <title>Dra. Monise Ferrari - Pediatra</title>
     <link rel="shortcut icon" href="./src/img/mini-logo.png" type="image/x-icon" title="Dra. Monise Ferrari">
     <link rel="stylesheet" href="./src/style.css">
-    <!-- <link rel="stylesheet" href="./src/responsividade.css"> -->
+    <link rel="stylesheet" href="./src/responsividade.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400..700&family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/css/all.css"></script>
@@ -27,8 +24,8 @@
         <div class="fundo-geral">
           <a href="https://wa.me/5511966009888" target="_blank" title="Entre em contato"><img id="whatsappButton" class="botao-whatsapp" src="./src/icones/whatsapp.png" alt="Contato WhatsApp"></a>
           <header>
-            <nav class="menu">
-              <a class="oculto" href="#inicio">Início</a>
+            <nav class="menu" id="menu">
+              <a href="#inicio" id="inicio-link" class="visible">Início</a>
               <a href="#sobre">Sobre</a>
               <a href="#dicas">Dicas</a>
               <a href="#contato">Contato</a>
@@ -36,8 +33,7 @@
             <div class="inicio" id="inicio">
               <div class="central">
                 <h2 class="nome">Dra. Monise</h2>
-                <!-- <h2 class="sobrenome">Ferrari</h2> -->
-                <!-- <img class="foto-inicial" src="./src/img/monise-profile.png" alt="Dra Monise Ferrari" title="DRA. MONISE FERRARI"> -->
+                <h2 class="sobrenome">Ferrari</h2>
                 <h3>PEDIATRA</h3>
                 <h4>CRM-SP 227385</h4>
               </div>
@@ -48,7 +44,7 @@
             <a class="botao-contato" href="https://wa.me/5511966009888" target="_blank" title="Entre em contato">Entre em contato</a>
           </div>
 
-          <div class="imagem-logo">
+          <div class="imagem-logo" id="imagem-logo">
             <img class="logo" src="./src/img/mini-logo.png" alt="Logo da Página">
           </div>
 
@@ -58,9 +54,7 @@
               <h2 class="titulo-section">SOBRE A</h2>
               <h2 class="sub-titulo-section">DRA MONISE</h2>
               <div class="fundo-retangulo-sobre">
-                <p>Formada no ano de xxxx pela Faculdade Tanãnãn de Tal Lugar, a Dra Monise Ferrari é especialista em
-                  pediatria pelo Hospital X de Portugual. Pós-Graduada em Especialidade pela universidade taltaltal. Formada
-                  desde o ano de xxxx  adipisicing elit. Assumenda sapiente omnis eius explicabo reprehenderit? Exercitationem architecto laborum eveniet sunt. Aspernatur nihil dolorum magni fuga non eaque aliquam dolores voluptatem? Saepe.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem sapiente enim alias quia, non doloremque, beatae assumenda necessitatibus, quaerat quas distinctio quae voluptatibus saepe reprehenderit et dicta facere deleniti accusamus. Culpa dolorum voluptatibus sed? Ea atque dolore ducimus, sed vel dolores omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis rerum perspiciatis corporis tenetur velit minus id itaque excepturi ab natus assumenda explicabo, qui voluptate consequuntur blanditiis aperiam accusantium maxime eveniet quisquam suscipit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor rerum explicabo quia quam, dignissimos libero laboriosam. Ipsam, officiis quae! Perspiciatis tenetur exercitationem quasi optio labore?</p>
               </div>
             </section>
 
@@ -96,7 +90,7 @@
                     <p>Pode ser diário, mas também pode ser realizado de 2 a 3 vezes por semana, com produtos de higiene
                       adequados para a pele do recém-nascido.</p>
                   </div>
-                  <!-- <div class="cards1">
+                  <div class="cards1">
                     <h2>CONTATO</h2>
                     <p>Evite que muitas pessoas tenham contato com o bebê nos primeiros dias de vida</p>
                   </div>
@@ -104,7 +98,7 @@
                     <h2>SONO</h2>
                     <p>Recém-nascidos dormem muitas horas por dia. Certifique-se de que o bebê esteja dormindo em um lugar
                       seguro e confortável, como um berço.</p>
-                  </div> -->
+                  </div>
                 </div> 
               </div>
             </section>
@@ -123,7 +117,7 @@
                     <div class="fundo-retangulo-contato">
                         <img src="./src/img/monise-profile.png" alt="Dra Monise Ferrari" class="foto-final" title="DRA. MONISE FERRARI">
                         <h2 class="nome-contato">Dra. Monise</h2>
-                        <h2 class="sobrenome-contato">FERRARI</h2>
+                        <h2 class="sobrenome-contato">Ferrari</h2>
                     </div>
                 </div>
                 <div class="column">
@@ -135,14 +129,14 @@
                   </div>
                 </div>
                 <div class="column">
-                    <div class="endereco">
-                        <h2 class="titulo-section">CONSULTÓRIO</h2>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.484743280837!2d-46.572905724666846!3d-23.658616878733103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce433e17a42003%3A0x212455ea378f1362!2sR.%20Formosa%2C%2055%20-%20Rudge%20Ramos%2C%20S%C3%A3o%20Bernardo%20do%20Campo%20-%20SP%2C%2009626-060!5e0!3m2!1spt-BR!2sbr!4v1712804006102!5m2!1spt-BR!2sbr"
-                            width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <p><a href="https://www.google.com/maps/place/R.+Formosa,+55+-+Rudge+Ramos,+S%C3%A3o+Bernardo+do+Campo+-+SP,+09626-060/data=!4m2!3m1!1s0x94ce433e17a42003:0x212455ea378f1362?sa=X&ved=1t:242&ictx=111" target="_blank">Rua Formosa, 55, </a><br> Rudge Ramos, <br> São Bernando do Campo - SP <br> CEP 09626-060</p>
-                    </div>
+                  <div class="endereco">
+                      <h2 class="titulo-section">CONSULTÓRIO</h2>
+                      <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.484743280837!2d-46.572905724666846!3d-23.658616878733103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce433e17a42003%3A0x212455ea378f1362!2sR.%20Formosa%2C%2055%20-%20Rudge%20Ramos%2C%20S%C3%A3o%20Bernardo%20do%20Campo%20-%20SP%2C%2009626-060!5e0!3m2!1spt-BR!2sbr!4v1712804006102!5m2!1spt-BR!2sbr"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      <p><a href="https://www.google.com/maps/place/R.+Formosa,+55+-+Rudge+Ramos,+S%C3%A3o+Bernardo+do+Campo+-+SP,+09626-060/data=!4m2!3m1!1s0x94ce433e17a42003:0x212455ea378f1362?sa=X&ved=1t:242&ictx=111" target="_blank">Rua Formosa, 55, </a><br> Rudge Ramos, <br> São Bernando do Campo - SP <br> CEP 09626-060</p>
+                  </div>
                 </div>
               </div>
             </section>
@@ -158,7 +152,7 @@
 
           <footer class="rodape">
             <p class="crm">crm-sp 227385</p>
-            <p>DRA MONISE FERRARI</p>
+            <p>DRA. MONISE FERRARI</p>
             <br>
             <p>&copy; Todos os Direitos Reservados</p>
             <p>Desenvolvido por <a href="https://www.linkedin.com/in/thiagomelop/" title="Linkedin - @thiagomelop">@thiagomelop</a></p>

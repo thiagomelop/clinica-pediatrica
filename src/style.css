@@ -1,35 +1,29 @@
-@import "https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Great+Vibes&display=swap');
 @font-face {
   font-family: 'externa';
   src: url(./fontes/Madina.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 html {
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
-  background-color: #c385f5;
-}
-
-/* body {
   width: 100%;
-  padding: 0;
-  margin: 0 auto;
-  background-color: #283040;
-  background-image: linear-gradient(to bottom,#e3bec5 1%, #283040 30%, #e3bec5 120%);  font-family: 'Handlee', sans-serif;
-  overflow-x: hidden; 
-} */
+}
 
 header {
   height: 100%;
 }
 
+
           /* INICIO */
 
 .fundo-geral {
-  /* margin-top: 4em; */
-  /* margin-left: 3em;
-  margin-right: 3em; */
-  background-image: linear-gradient(to bottom,#e3bec5 1%, #283040 30%, #e3bec5 120%);
+  background-image: linear-gradient(to bottom,#e3bec5 19%, #283040 40%, #e3bec5 60%, #283040 80%, #e3bec5 100%);
   position: relative;
 }
 
@@ -38,47 +32,46 @@ header {
   display: flex;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 70px;
+  width: 100vw;
+  height: auto;
+  padding: .5em;
   justify-content: space-evenly;
   align-items: center;
-  padding: 1em 0 1em;
-  border-bottom: 3px  solid #F4F4F9;
-  background-color:#283040;
+  border-bottom: 3px  solid #283040;
+  background-color: #e3bec5;
   z-index: 1000;
 }
 
 .menu a {
   text-decoration: none;
-  font-size: 1.8em;
+  font-size: 1.5em;
   transition: .8s;
-  color: #fff;
-  font-family: 'Playpen Sans', Arial, Helvetica, sans-serif;
+  color: #283040;
+  font-family: 'Handlee', 'montserrat', Arial, Helvetica, sans-serif;
 }
-
-.oculto {
-  display: none;
-}
-
 
 a:hover {
-  transform: scale(1. 1);
-  color: #e3bec5 ;
+  transform: scale(1.2, 1.2);
   text-decoration: underline;
-  text-decoration-color: #e3bec5;
+  text-decoration-color: #283040;
+}
+
+#inicio-link {
+  display: none;
 }
 
 .botao-whatsapp {
   display: block;
   position: fixed;
-  width: 60px;
+  width: 50px;
   height: auto;
   top: 80%;
   left: 92%;
+  z-index: 1;
 }
 
 .botao-whatsapp:hover {
-  transform: scale(1.4, 1.4);
+  transform: scale(1.2, 1.2);
 }
 
 .blink {
@@ -92,7 +85,8 @@ a:hover {
 }
 
 .inicio {
-  background-image: url(./img/corona-test.jpg);
+  position: relative;
+  background-image: linear-gradient(to bottom, transparent 40%, #e3bec5), url('./img/pe.jpg');
   scroll-margin-top: 80px;
   background-position: center;
   background-size: cover;
@@ -102,7 +96,6 @@ a:hover {
   text-align: center;
   padding-top: 0;
   height: 100vh;
-  border-bottom: 3px dotted  #F4F4F9;
 }
 
 .inicio h3 {
@@ -114,65 +107,54 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin-top: 200px; */
-  width: 40%;
+  width: 60%;
 }
 
 .central > h2, h3, h4 {
-  padding: 1px;
-  margin-bottom: 0;
   color: #283040;
   border-radius: 15px;
-  margin: 10px;
 }
 
 .central > .nome, .sobrenome {
+  font-weight: 500;
   display: inline-block;
-  max-width: 300px;
-  width: 100%;
-  font-family: 'externa';
-  background-color: rgba(255, 255, 255, 0.300);
+  max-width: 100%;
+  padding: .2em;
 }
 
 .central > h3 {
+  font-weight: bold;
+  color: #283040;
   line-height: 1;
-  font-size: 1.750em;
+  font-size: 1.800em;
+  font-family: 'Handlee', 'montserrat', Arial, Helvetica, sans-serif;
 }
 
 .central > h4 {
+  font-weight: bold;
+  color: #283040;
   line-height: 1;
-  font-size: 1.5em;
+  font-size: 1.800em;
   margin: 0;
+  font-family: 'Handlee', 'montserrat', Arial, Helvetica, sans-serif;
 }
-
-
-
-/* .foto-inicial {
-  width: 70px;
-  height: 70px;
-  border-radius: 300px;
-  border: 5px solid #fff;
-  margin: 1em 1em;
-  
-}
-
-.foto-inicial:hover {
-  border: 5px solid #283040;
-  transform: scale(1.02);
-} */
 
 .nome {
-  /* font-weight: 600; */
-  font-size: 4em;
-  color: #283040;
-  /* text-decoration: underline; */
-  font-family: 'Handlee', sans-serif;
+  margin-top: .5em;
+  margin-bottom: 0;
+  line-height: 1;
+  letter-spacing: 20px;
+  font-size: 5em;
+  font-family: 'cinzel', 'montserrat', Arial, Helvetica, sans-serif;
 }
 
 .sobrenome {
-  color: #283040;
-  font-size: 3em;
-  font-family: 'externa', sans-serif;
+  line-height: 1;
+  letter-spacing: 20px;
+  font-size: 5em;
+  font-family: 'cinzel', 'montserrat', Arial, Helvetica, sans-serif;
+  margin-bottom: 1em;
+  margin-top: 0;
 }
 
 .entre-em-contato {
@@ -183,7 +165,7 @@ a:hover {
 }
 
 .botao-contato {
-  font-family: 'Handlee';
+  font-family: 'Handlee', 'montserrat', Arial, Helvetica, sans-serif;
   display: inline-block;
   text-decoration: none;
   font-size: 1.5em;
@@ -210,24 +192,21 @@ a:hover {
   scroll-margin-top: 70px;
   text-align: center;
   margin: 0 5em 0 5em;
-  padding-top: 0.5em;
-  padding-bottom: 6em;
+  padding: 0.5em 1em 3em 1em;
   height: 100%;
   background-image: url(./img/foto-fundo-1.png);
   background-size: cover;
   background-position: center;
-  border-radius: .5em;
-  border-top-left-radius: 4em;
-  border-bottom-right-radius: 4em;
+  border-radius: 2em;
 }
 
 .titulo-section {
   font-size: 2em;   /*padrão */
   text-transform: uppercase;
   text-align: center;
-  color: #283040;
+  color: #fff;
   margin-top: 1em;
-  font-family: 'Handlee', sans-serif;
+  font-family: 'Handlee', 'montserrat', Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
 
@@ -236,51 +215,48 @@ a:hover {
   margin-bottom: 1em;
   text-transform: uppercase;
   text-align: center;
-  color: #283040;
+  color: #fff;
   text-decoration: underline;
-  text-decoration-color: #283040;
-  font-family: 'Handlee', sans-serif;
+  text-decoration-color: #fff;
+  font-family: 'Handlee', 'montserrat', Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
-
-
 
 .fundo-retangulo-sobre {
   text-align: center;
   height: auto;
-  background-color:rgba(40, 48, 64, 0.500);
+  background-image: linear-gradient(to bottom, rgba(227, 190, 197, 0.500) 40%, rgba(194, 230, 219, 0.500) 70%);
   padding: 1em;
   margin: 2em 5em 0 5em;
   border-radius: 1.5em;
-  color: #fff;
-  font-size: 1.3em;
-  font-weight:500 ;
+  color: #283040;
+  font-size: 1.5em;
+  font-weight: 600 ;
+  font-family: 'Handlee', 'montserrat', Arial, Helvetica, sans-serif;
 }
 
 
           /* DICAS */
 
 .dicas {
-  scroll-margin-top: 50px;
-  height: auto;
+  scroll-margin-top: 70px;
+  text-align: center;
   margin: 0 5em 0 5em;
-  padding-top: 0.5em;
-  padding-bottom: 6em;
-  background-image: url(./img/foto-fundo-2.png);
+  padding: 0.5em 1em 3em 1em;
+  height: 100%;
+  background-image: url(./img/foto-fundo-1.png);
   background-size: cover;
   background-position: center;
-  border-radius: .5em;
-  border-top-left-radius: 4em;
-  border-bottom-right-radius: 4em;
+  border-radius: 2em;
 }
 
 .titulo-section-dicas {
   font-size: 2em;   /*padrão */
   text-transform: uppercase;
   text-align: center;
-  color: #283040;
+  color: #fff;
   margin-top: 1em;
-  font-family: 'Handlee', sans-serif;
+  font-family: 'Handlee', 'montserrat', Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
 
@@ -289,10 +265,10 @@ a:hover {
   margin-bottom: 1em;
   text-transform: uppercase;
   text-align: center;
-  color: #283040;
+  color: #fff;
   text-decoration: underline;
-  text-decoration-color: #283040;
-  font-family: 'Handlee', sans-serif;
+  text-decoration-color: #fff;
+  font-family: 'Handlee', 'montserrat', Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
 
@@ -308,32 +284,33 @@ a:hover {
 
 .grid-container > .cards {
   padding: 1em;
-  /* height: auto; */
-  background-image: linear-gradient(to bottom, rgba(194, 230, 219, 0.500) 10%, rgba(227, 190, 197, 0.500) 80%);
+  background-image: linear-gradient(to bottom, rgba(227, 190, 197, 0.700) 40%, rgba(194, 230, 219, 0.700) 70%);
   text-align: center;
-  border-radius: .75em;
+  border-radius: .5em;
   transform: rotate(-3deg);
-  font-family: 'Handlee', sans-serif;
+  font-family: 'Handlee', 'montserrat', Arial, Helvetica, sans-serif;
+  border-top-left-radius: 3em;
+  border-bottom-right-radius: 3em;
 }
 
 .grid-container > .cards1 {
   padding: 1em;
-  /* height: auto; */
-  background-image: linear-gradient(to bottom, rgba(194, 230, 219, 0.500) 10%, rgba(227, 190, 197, 0.500) 80%);
+  background-image: linear-gradient(to bottom, rgba(227, 190, 197, 0.700) 40%, rgba(194, 230, 219, 0.700) 70%);
   text-align: center;
-  border-radius: .75em;
+  border-radius: .5em;
   transform: rotate(3deg);
-  font-family: 'Handlee', sans-serif;
+  font-family: 'Handlee', 'montserrat', Arial, Helvetica, sans-serif;
+  border-top-left-radius: 3em;
+  border-bottom-right-radius: 3em;
 }
 
 .grid-container > .cards::after{
   content: "";
-  background-color: #c385f5;
-  border-radius: 999px;
-  /* border: 7px solid #e3bec5; */
+  background-image: url(./icones/alfinete.png);
+  transform: rotate(-45deg);
   display: block;
-  height: 1.25rem;
-  width: 1.25rem;
+  height: 1.5rem;
+  width: 1.5rem;
   position: absolute;
   top: 0.25rem;
   right: 1rem;
@@ -341,12 +318,11 @@ a:hover {
 
 .grid-container > .cards1::after{
   content: "";
-  background-color: #c385f5;
-  /* border: 7px solid #e3bec5; */
-  border-radius: 999px;
+  background-image: url(./icones/alfinete.png);
+  transform: rotate(-45deg);
   display: block;
-  height: 1.25rem;
-  width: 1.25rem;
+  height: 1.5rem;
+  width: 1.5rem;
   position: absolute;
   top: 0.25rem;
   right: 1rem;
@@ -355,8 +331,6 @@ a:hover {
 .cards:hover, .cards1:hover { 
   cursor: pointer;
 }
-
-
 
 .grid-container h2{
   color: #fff;
@@ -376,45 +350,43 @@ a:hover {
 
 .cards:hover, .cards1:hover {
   transform: rotate(0);
-
-
 }
 
           /* CONTATOS */
 
 .contato {
-  display: grid;
-  scroll-margin-top: 60px;
-  height: 100%;
+  scroll-margin-top: 70px;
+  text-align: center;
   margin: 0 5em 0 5em;
-  background-color: rgba(217, 217, 217, 0.1);
-  padding-top: 0.5em;
-  padding-bottom: 6em;
+  padding: 0.5em 1em 3em 1em;
+  height: 100%;
   background-image: url(./img/foto-fundo-1.png);
   background-size: cover;
   background-position: center;
-  border-radius: .5em;
-  border-top-left-radius: 4em;
-  border-bottom-right-radius: 4em;
+  border-radius: 2em;
 }
 
 .fundo-retangulo-contato {
-  margin-top: 3em;
-  margin-left: 3em;
-  height: 100%;
+  margin: 1em auto;
+  height: 60%;
   padding: 1em 0;
-  background-image: linear-gradient(to bottom, rgba(194, 230, 219, 0.500) 10%, rgba(227, 190, 197, 0.500) 80%);
-  text-align: center;
-  border-radius: .75em;
-  /* border-top-left-radius: 3em;
-  border-bottom-right-radius: 3em; */
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, rgba(227, 190, 197, 0.700) 40%, rgba(194, 230, 219, 0.700) 70%);
+  border-radius: .5em;
+  border-top-left-radius: 3em;
+  border-bottom-right-radius: 3em;
 }
 
 .fundo-retangulo-contato img {
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  border: 5px solid #fff;
+  width: 300px;
+  height: 300px;
+  border: 5px solid #e3bec5;
+  align-items: center;
 }
 
 .foto-final:hover {
@@ -424,39 +396,42 @@ a:hover {
 
 .nome-contato {
   font-weight: 600;
-  font-size: 1.075em;
+  font-size: 3em;
   color: #283040;
-  margin-top: 3em;
-  text-decoration: underline;
-  font-family: 'Handlee', sans-serif;
+  margin-top: 1em;
+  font-family: 'Great Vibes', 'montserrat', Arial, Helvetica, sans-serif;
 }
 
 .sobrenome-contato {
   margin: 0;
   color: #283040;
-  font-size: 1em;
+  font-size: 3em;
   font-weight: 400;
-  font-family: 'Handlee', sans-serif;
+  font-family: 'Great Vibes', 'montserrat', Arial, Helvetica, sans-serif;
 }
 
 
 .icones {
+  margin: 1em auto;
+  height: 60%;
+  padding: 1em 0;
+  width: 50%;
   display: flex;
-  margin-top: 3em;
-  height: 100%;
-  background-image: linear-gradient(to bottom, hwb(162 76% 10% / 0.5) 10%, rgba(227, 190, 197, 0.500) 80%);
-  text-align: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: center;
   flex-direction: column;
-  border-radius: .75em;
-  padding: 0 0 6em 0;
+  background-image: linear-gradient(to bottom, rgba(227, 190, 197, 0.700) 40%, rgba(194, 230, 219, 0.700) 70%);
+  border-radius: .5em;
+  border-top-left-radius: 3em;
+  border-bottom-right-radius: 3em;
 }
 
 .icones div {
   margin-bottom:0;
-  background-color: rgba(194, 230, 219, 0.500);
+  background-color:  rgba(227, 191, 197, 0.5) ;
   margin-left: 50px;
   margin-right: 50px;
+  margin: 20px 50px 0 50px;
   border-radius: .75em;
   padding: 1em;
 }
@@ -475,20 +450,22 @@ a:hover {
   color: #283040;
   margin-top: 0;
   margin-bottom: 1em;
-  font-family: 'Handlee', sans-serif;
+  font-family: 'Handlee', 'montserrat', Arial, Helvetica, sans-serif;
 }
 
 .endereco {
-  margin-top: 3em;
-  margin-right: 3em;
-  height: 100%;
-  padding: 1em 1em;
-  background-image: linear-gradient(to bottom, rgba(194, 230, 219, 0.500) 10%, rgba(227, 190, 197, 0.500) 80%);
-  text-align: center;
-  border-radius: .75em;
-  /* position: relative; */
-  overflow: hidden;
-  transition: width 0.3s, height 0.3s; /* adiciona uma transição suave */
+  margin: 1em auto;
+  height: 60%;
+  padding: 1em 0;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, rgba(227, 190, 197, 0.700) 40%, rgba(194, 230, 219, 0.700) 70%);
+  border-radius: .5em;
+  border-top-left-radius: 3em;
+  border-bottom-right-radius: 3em;
 }
 
 .endereco > .titulo-section {
@@ -498,24 +475,27 @@ a:hover {
   color: #283040;
   margin-top: 0;
   margin-bottom: 1em;
-  font-family: 'Handlee', sans-serif;
+  font-family: 'Handlee', 'montserrat', Arial, Helvetica, sans-serif;
 }
 
-.endereco iframe {
-  border-radius: .75em;
+.endereco > .mapa {
+  border-radius: .5em;
+  margin: 0 auto;
+  width: 400px;
+  height: 300px;
 }
 
 .endereco p a {
   color: inherit;
   text-decoration: underline;
-  font-family: 'Handlee', sans-serif;
+  font-family: 'Handlee', 'montserrat', Arial, Helvetica, sans-serif;
 }
 
 .endereco p {
     margin-top: 1em;
     text-align: center;
     color: #283040;
-    font-family: 'Handlee', sans-serif;
+    font-family: 'Handlee', 'montserrat', Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
@@ -525,9 +505,10 @@ a:hover {
 }
 
 .logo {
-    width: 200px; /* Tamanho do logo */
+    width: 200px;
     height: auto;
     margin: 3em 0;
+    mix-blend-mode: difference
 }
 
 .rodape {
@@ -536,7 +517,8 @@ a:hover {
   padding-bottom: 2em;
   text-align: center;
   color: #283040;
-  font-family: 'Handlee', sans-serif;
+  font-family: 'Handlee', 'montserrat', Arial, Helvetica, sans-serif;
+  font-size: 1em;
 }
 
 .crm {
@@ -547,10 +529,10 @@ a:hover {
 .rodape a {
   text-decoration: underline;
   color: inherit;
-  font-family: 'Handlee', sans-serif;
+  font-family: 'Handlee', 'montserrat', Arial, Helvetica, sans-serif;
 }
 
 .rodape p:nth-child(5) {
   font-size: .9em;
-  font-family: 'Handlee', sans-serif;
+  font-family: 'Handlee', 'montserrat', Arial, Helvetica, sans-serif;
 }

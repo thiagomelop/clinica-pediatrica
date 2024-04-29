@@ -1,196 +1,371 @@
-@media only screen and (max-width: 400px) {
-  .icones > div {
-    padding: .250em;
-  }
-}
+      /* DISPOSITIVOS ATÉ 400px*/
 
-/* Médios dispositivos (tablets, 768px e abaixo) */
-@media only screen and (max-width: 768px) {
-  body {
-    padding: 0 auto;
-    font-size: 7px;
-}
+@media only screen and (min-width:250px) and (max-width: 400px) {
 
-.fundo-geral {
-  margin: 0; /* Reduz as margens laterais em telas menores */
-}
-
-.menu {
-  height: auto;
-  flex-direction: column;
-}
-.oculto {
-  display: block; 
-}
-
-.botao-whatsapp {
-  display: block;
-  position: fixed;
-  width: 40px;
-  height: auto;
-  top: 80%;
-  left: 90%;
-}
-
-.botao-whatsapp:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.blink {
-  animation: blinker 1s linear infinite;
-}
-
-@keyframes blinker {
-  50% {
-      opacity: .5;
-  }
-}
-
-.central {
-  width: 70%;
-}
-
-.central > .nome, .sobrenome {
-  font-family: 'Dancing Script';
-  background-color: rgba(255,255,255, 0.300);
-}
-
-
-.titulo-section {
-  margin-top: .1em ;
-  color:#e3bec5 ;
-  font-size: 1.3em; 
-}
-
-.sub-titulo-section {
-  margin-bottom: .1em;
-  color:#e3bec5 ;
-  text-decoration-color: #e3bec5 ;
-  font-size: 1em;
-}
-
-.titulo-section-dicas {
-  margin-top: .1em ;
-  font-size: 1.3em;  
-}
-
-.sub-titulo-section-dicas {
-  margin-bottom: .1em;
-  font-size: 1em;
-}
-
-.inicio {
-  margin-top: 70px;
-}
-
-.inicio, .sobre, .dicas, .contato {
-  scroll-margin-top: 150px;
-}
-.sobre, .dicas, .contato {
-  margin: 0 1em;
-}
-
-.grid-container {
-  display: block;
-  /* display: flex; */
-  margin: 0;
-  padding: 2px;
-}
-
-.grid-container > .cards, 
-.grid-container > .cards1 {
-  padding: 15px;
-  transform: rotate(0);
-  margin: 15px 15px;
-}
-
-.grid-container > .cards::after, 
-.grid-container > .cards1::after {
-  content: none;
-}
-
-.fundo-retangulo-sobre {
-  margin: 1em 1.5em 0 1em;
-  padding: .8em;
-}
-
-.fundo-retangulo-sobre > p {
-  font-size: .7em;
-}
-
-.contato {
-  display: block;
-}
-
-.fundo-retangulo-contato {
-  margin: .5em auto;
-  width: 80%;
-}
-
-.fundo-retangulo-contato > .nome-contato {
-  font-size: 1.1em;
-  margin-top: 1em;
-}
-
-.fundo-retangulo-contato > .sobrenome-contato { 
-  font-size: .9em;
-}
-
-.icones { 
-  display: block;
-  margin: .5em auto;
-  width: 80%;
-}
-
-.icones > div {
-  margin: 0 60px 12px 60px ;
-  font-size: .75em;
-}
-
-.icones > .titulo-section {
-  padding-top: 15px;
-}
-
-.endereco {
-  display: block;
-  margin: .5em auto;
-  width: 80%;
-}
-
-.endereco > .titulo-section {
-  padding-top: 15px;
-}
-
-.logo {
-  width: 150px;
-  margin: 1.5em 0;
-}
-
-.entre-em-contato {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1em 0 0 0 ;
-}
-
-.botao-contato {
-  font-size: 1em;
-  font-weight: bold;
-}
-}
-
-
-
-/* @media only screen and (max-width: 992px) {
-  .menu a {
-    font-size: 1em;
-  }
-
-  .nome, .nome-contato {
+  .titulo-section {
     font-size: 2em;
   }
 
-  .sobrenome, .sobrenome-contato {
-    font-size: 1.5em;
+  .sobre {
+    padding: 0.5em 2em 3em 2em;
   }
-} */
+
+  .dicas {
+    padding: 0.5em 2em 3em 2em;
+  }
+
+  .fundo-retangulo-contato {
+    padding: 1em 0;
+  }
+  
+  .fundo-retangulo-contato > img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #e3bec5;
+    align-items: center;
+  }
+
+  .endereco > .mapa {
+    width: 90%;
+    height: auto;
+    align-items: center;
+    display: flex;
+  }
+}
+
+
+      /* DISPOSITIVOS ATÉ 768px*/
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 0;
+    font-size: 7px;
+  }
+
+  .fundo-geral {
+    margin: 0;
+  }
+
+  .menu > a {
+    font-size: 3em;
+  }
+
+  .botao-whatsapp {
+    display: block;
+    position: fixed;
+    width: 40px;
+    height: auto;
+    top: 80%;
+    left: 85%;
+  }
+
+  .botao-whatsapp:hover {
+    transform: none;
+  }
+
+  .blink {
+    animation: blinker 1s linear infinite;
+  }
+
+  @keyframes blinker {
+    50% {
+        opacity: .5;
+      }
+    }
+    
+
+          /* INICIO */
+    
+    .inicio, .sobre, .dicas, .contato {
+      scroll-margin-top: 150px;
+    }
+
+    .sobre, .dicas, .contato {
+      margin: 0 1em;
+    }
+
+  .central {
+    width: 100%;
+  }
+
+  .central > .nome, .sobrenome {
+    font-family: 'cinzel', 'montserrat', Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    letter-spacing: 10px;
+  }
+
+  .central > .nome {
+    margin-bottom: 0;
+  }
+
+  .central > .sobrenome {
+    margin-top: 0;
+  }
+
+  .central h3,
+  .central h4 {
+    font-size: 2.5em;
+  }
+
+  .titulo-section {
+    margin-top: .1em ;
+    font-size: 3em; 
+  }
+
+  .sub-titulo-section {
+    margin-bottom: .1em;
+    font-size: 3em;
+  }
+
+          /* SOBRE */
+
+
+  .fundo-retangulo-sobre {
+    margin: 1em 0;
+    padding: .5em;
+    font-size: 2.5em;
+  }
+
+
+        /* DICAS */
+
+  .titulo-section-dicas {
+    margin-top: .1em ;
+    font-size: 3em;  
+  }
+
+  .sub-titulo-section-dicas {
+    margin-bottom: .1em;
+    font-size: 3em;
+  }
+
+
+  .grid-container {
+    grid-auto-flow: column;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .grid-container > .cards, 
+  .grid-container > .cards1 {
+    transform: rotate(0);
+    width: 90vw;
+    margin: 0;
+    padding: .5em;
+    font-size: 2.5em;
+  }
+
+  .grid-container > .cards::after, 
+  .grid-container > .cards1::after {
+    content: "";
+    background-image: url(./icones/alfinete.png);
+    transform: rotate(-45deg);
+    display: block;
+    height: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+    top: 0.25rem;
+    right: 1rem;
+  }
+
+
+            /* CONTATO */
+
+  .contato {
+    display: grid;
+    padding: 0.5em 0 6em 0;
+  }
+
+  .fundo-retangulo-contato {
+    margin: .5em auto;
+    width: 80%;
+  }
+
+  .fundo-retangulo-contato > img {
+    width: 35%;
+    height: 35%;
+  }
+
+  .fundo-retangulo-contato > .nome-contato {
+    font-size: 3em;
+    margin-top: 2em;
+    margin-bottom: 0;
+  }
+
+  .fundo-retangulo-contato > .sobrenome-contato { 
+    font-size: 3em;
+  }
+
+  .icones { 
+    display: block;
+    margin: .5em auto;
+    width: 80%;
+  }
+
+  .endereco > .mapa {
+    height: auto;
+    align-items: center;
+    display: flex;
+  }
+
+  .icones > .titulo-section {
+    padding-top: 15px;
+    font-size: 1em;
+  }
+
+  .icones a {
+    font-size: 1.8em;
+  }
+
+  .icones i {
+    font-size: 1em;
+  }
+
+  .endereco {
+    display: block;
+    margin: .5em auto;
+    width: 80%;
+  }
+
+  .endereco > .titulo-section {
+    padding-top: 15px;
+    font-size: 1em;
+  }
+
+  .endereco p {
+    font-size: 2em ;
+  }
+
+  .endereco > p > a {
+    text-decoration: none;
+  }
+
+  .logo {
+    width: 150px;
+    margin: 1.5em 0;
+  }
+
+  .entre-em-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0 0 0 ;
+  }
+
+  .botao-contato {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+
+            /* FOOTER */
+
+  .rodape > p {
+    font-size: 2em;
+  }
+
+  .rodape p:nth-child(5) {
+    font-size: 1.5em;
+    font-family: 'Handlee', 'montserrat', Arial, Helvetica, sans-serif;
+  }
+}
+
+
+      /* DISPOSITIVOS ATÉ 992px*/
+
+
+
+@media only screen and (max-width: 992px) {
+
+          /* DICAS */
+
+
+
+          /* CONTATO */
+
+  .contato {
+    display: grid;
+    padding: 0.5em 0 6em 0;
+  }
+
+  .fundo-retangulo-contato {
+    display: flex;
+    margin: 1.5em auto;
+    width: 70vw;
+  }
+
+  .icones { 
+    display: flex;
+    margin: 1.5em auto;
+    width: 70vw;
+  }
+
+  .icones > div {
+    padding: 5%;
+    font-size: 1em;
+  }
+
+  .icones > .titulo-section {
+    padding-top: 15px;
+    font-size: 2.5em;
+  }
+
+  .endereco {
+    display: flex;
+    margin: 1.5em auto;
+    width: 70vw;
+  }
+
+  .endereco > .mapa {
+    width: 70%;
+    height: auto;
+    align-items: center;
+    display: flex;
+  }
+
+  .endereco > .titulo-section {
+    padding-top: 15px;
+    font-size: 2.5em;
+  }
+}
+
+
+      /* DISPOSITIVOS ATÉ 1030px*/
+
+
+
+@media only screen and (max-width:1030px){
+
+    .grid-container {
+      grid-auto-flow: column;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .grid-container > .cards::after, 
+    .grid-container > .cards1::after {
+      content: "";
+      background-image: url(./icones/alfinete.png);
+      transform: rotate(-45deg);
+      display: block;
+      height: 1.5rem;
+      width: 1.5rem;
+      position: absolute;
+      top: 0.25rem;
+      right: 1rem;
+    }
+
+    .grid-container > .cards, 
+    .grid-container > .cards1 {
+      padding: 15px;
+      transform: rotate(0);
+      width: 70vw;
+  }
+}
