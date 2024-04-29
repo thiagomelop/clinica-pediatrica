@@ -1,4 +1,5 @@
-Clínica de Pediatria da Dra. Monise Ferrari
+Clínica de Pediatria da Dra. Monise Ferrari.
+
 Bem-vindo à landing page da Clínica de Pediatria!
 Nosso objetivo é fornecer cuidados de saúde excepcionais para os pequenos, garantindo um ambiente acolhedor e seguro para toda a família.
 
