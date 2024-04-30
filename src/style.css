@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Great+Vibes&display=swap');
-@font-face {
-  font-family: 'externa';
-  src: url(./fontes/Madina.ttf);
-}
 
 body {
   margin: 0;
@@ -18,7 +14,6 @@ html {
 header {
   height: 100%;
 }
-
 
           /* INICIO */
 
@@ -88,7 +83,7 @@ a:hover {
   position: relative;
   background-image: linear-gradient(to bottom, transparent 40%, #e3bec5), url('./img/pe.jpg');
   scroll-margin-top: 80px;
-  background-position: center;
+  background-position: 45% 50%;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -306,7 +301,8 @@ a:hover {
 
 .grid-container > .cards::after{
   content: "";
-  background-image: url(./icones/alfinete.png);
+  background-color: #7987a4;
+  border-radius: 999px;
   transform: rotate(-45deg);
   display: block;
   height: 1.5rem;
@@ -318,7 +314,8 @@ a:hover {
 
 .grid-container > .cards1::after{
   content: "";
-  background-image: url(./icones/alfinete.png);
+  background-color: #7987a4;
+  border-radius: 999px;
   transform: rotate(-45deg);
   display: block;
   height: 1.5rem;
@@ -439,7 +436,7 @@ a:hover {
 .icones a {
   text-decoration: none;
   color: inherit;
-  font-size: 1.250em;
+  font-size: 1.5em;
   font-weight: 600;
 }
 

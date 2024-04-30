@@ -57,7 +57,7 @@
     width: 40px;
     height: auto;
     top: 80%;
-    left: 85%;
+    left: 90%;
   }
 
   .botao-whatsapp:hover {
@@ -162,8 +162,8 @@
   .grid-container > .cards::after, 
   .grid-container > .cards1::after {
     content: "";
-    background-image: url(./icones/alfinete.png);
-    transform: rotate(-45deg);
+    background-color: #7987a4;
+    border-radius: 999px;
     display: block;
     height: 1.5rem;
     width: 1.5rem;
@@ -192,6 +192,7 @@
 
   .fundo-retangulo-contato > .nome-contato {
     font-size: 3em;
+    font-weight: 500;
     margin-top: 2em;
     margin-bottom: 0;
   }
@@ -352,8 +353,8 @@
     .grid-container > .cards::after, 
     .grid-container > .cards1::after {
       content: "";
-      background-image: url(./icones/alfinete.png);
-      transform: rotate(-45deg);
+      background-color: #7987a4;
+      border-radius: 999px;
       display: block;
       height: 1.5rem;
       width: 1.5rem;
@@ -368,4 +369,11 @@
       transform: rotate(0);
       width: 70vw;
   }
+
+
+        /* CONTATO */
+
+    .contato .fundo-retangulo-contato, .icones, .endereco {
+      padding-bottom: 3em;
+    } 
 }
