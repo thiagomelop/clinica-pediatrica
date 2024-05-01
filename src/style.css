@@ -61,7 +61,7 @@ a:hover {
   width: 50px;
   height: auto;
   top: 80%;
-  left: 92%;
+  left: 94%;
   z-index: 1;
 }
 
@@ -163,6 +163,7 @@ a:hover {
   font-family: 'Handlee', 'montserrat', Arial, Helvetica, sans-serif;
   display: inline-block;
   text-decoration: none;
+  text-decoration-color: none;
   font-size: 1.5em;
   background-color: #e3bec5;
   color: #283040;
@@ -173,10 +174,10 @@ a:hover {
 }
 
 .botao-contato:hover {
+  transform: scale(1.1 , 1.1);
   text-decoration: none;
   color: #e3bec5;
   background-color: #283040;
-  font-weight: 700;
 }
 
 
@@ -286,6 +287,7 @@ a:hover {
   font-family: 'Handlee', 'montserrat', Arial, Helvetica, sans-serif;
   border-top-left-radius: 3em;
   border-bottom-right-radius: 3em;
+  height: auto;
 }
 
 .grid-container > .cards1 {
@@ -297,6 +299,7 @@ a:hover {
   font-family: 'Handlee', 'montserrat', Arial, Helvetica, sans-serif;
   border-top-left-radius: 3em;
   border-bottom-right-radius: 3em;
+  height: auto;
 }
 
 .grid-container > .cards::after{
@@ -366,7 +369,7 @@ a:hover {
 .fundo-retangulo-contato {
   margin: 1em auto;
   height: 60%;
-  padding: 1em 0;
+  padding: 1em 0 3em;
   width: 50%;
   display: flex;
   justify-content: space-around;
@@ -395,7 +398,7 @@ a:hover {
   font-weight: 400;
   font-size: 3em;
   color: #283040;
-  margin-top: 1em;
+  margin: 1em 0 0 0;
   font-family: 'Great Vibes', 'montserrat', Arial, Helvetica, sans-serif;
 }
 
@@ -411,7 +414,7 @@ a:hover {
 .icones {
   margin: 1em auto;
   height: 60%;
-  padding: 1em 0;
+  padding: 1em 0 3em;
   width: 50%;
   display: flex;
   justify-content: space-around;
@@ -426,11 +429,10 @@ a:hover {
 .icones div {
   margin-bottom:0;
   background-color:  rgba(227, 191, 197, 0.5) ;
-  margin-left: 50px;
-  margin-right: 50px;
   margin: 20px 50px 0 50px;
   border-radius: .75em;
   padding: 1em;
+  width: 60%;
 }
 
 .icones a {
@@ -453,7 +455,7 @@ a:hover {
 .endereco {
   margin: 1em auto;
   height: 60%;
-  padding: 1em 0;
+  padding: 1em 0 3em;
   width: 50%;
   display: flex;
   justify-content: space-around;
@@ -509,13 +511,34 @@ a:hover {
 }
 
 .rodape {
-  border-top: 3px dotted  #F4F4F9;
+  border-top: 1px dashed  #F4F4F9;
   padding-top: 2em;
   padding-bottom: 2em;
   text-align: center;
   color: #283040;
   font-family: 'Handlee', 'montserrat', Arial, Helvetica, sans-serif;
   font-size: 1em;
+}
+
+.rede-social-rodape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.whatsapp {
+  width: 19px;
+  height: 19px;
+  margin: 0 2px;
+  padding: 0;
+}
+
+.instagram {
+  width: 22px;
+  height: 22px;
+  margin: 0 2px;
+  padding: 0;
 }
 
 .crm {

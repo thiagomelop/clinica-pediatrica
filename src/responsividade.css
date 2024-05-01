@@ -77,13 +77,13 @@
 
           /* INICIO */
     
-    .inicio, .sobre, .dicas, .contato {
-      scroll-margin-top: 150px;
-    }
+  .inicio, .sobre, .dicas, .contato {
+    scroll-margin-top: 50px;
+  }
 
-    .sobre, .dicas, .contato {
-      margin: 0 1em;
-    }
+  .sobre, .dicas, .contato {
+    margin: 0 1em;
+  }
 
   .central {
     width: 100%;
