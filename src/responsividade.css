@@ -376,4 +376,24 @@
     .contato .fundo-retangulo-contato, .icones, .endereco {
       padding-bottom: 3em;
     } 
+
+    .rede-social-rodape {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .whatsapp {
+      width: 19px;
+      height: 19px;
+      margin: 0 2px;
+      padding: 0;
+    }
+    
+    .instagram {
+      width: 22px;
+      height: 22px;
+      margin: 0 2px;
+      padding: 0;
+    }
 }
