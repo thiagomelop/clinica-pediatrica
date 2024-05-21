@@ -57,7 +57,7 @@
     width: 40px;
     height: auto;
     top: 80%;
-    left: 90%;
+    left: 88%;
   }
 
   .botao-whatsapp:hover {
@@ -386,14 +386,20 @@
     .whatsapp {
       width: 19px;
       height: 19px;
-      margin: 0 2px;
+      margin: 0 15px 0 0;
+      padding: 0;
+    }
+    .telefone {
+      width: 19px;
+      height: 19px;
+      margin: 0 15px 0 0;
       padding: 0;
     }
     
     .instagram {
       width: 22px;
       height: 22px;
-      margin: 0 2px;
+      margin: 0;
       padding: 0;
     }
 }

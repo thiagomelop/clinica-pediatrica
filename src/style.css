@@ -231,6 +231,14 @@ a:hover {
   font-family: 'Handlee', 'montserrat', Arial, Helvetica, sans-serif;
 }
 
+.fundo-retangulo-sobre p {
+  text-align: start;
+}
+
+.fundo-retangulo-sobre h3 {
+  text-decoration: underline;
+}
+
 
           /* DICAS */
 
@@ -366,7 +374,7 @@ a:hover {
   border-radius: 2em;
 }
 
-.fundo-retangulo-contato {
+/* .fundo-retangulo-contato {
   margin: 1em auto;
   height: 60%;
   padding: 1em 0 3em;
@@ -408,7 +416,7 @@ a:hover {
   font-size: 3em;
   font-weight: 400;
   font-family: 'Great Vibes', 'montserrat', Arial, Helvetica, sans-serif;
-}
+} */
 
 
 .icones {
@@ -543,14 +551,21 @@ a:hover {
 .whatsapp {
   width: 19px;
   height: 19px;
-  margin: 0 2px;
+  margin: 0 20px 0 0;
+  padding: 0;
+}
+
+.telefone {
+  width: 22px;
+  height: 22px;
+  margin: 0 20px 0 0;
   padding: 0;
 }
 
 .instagram {
   width: 22px;
   height: 22px;
-  margin: 0 2px;
+  margin: 0;
   padding: 0;
 }
 
